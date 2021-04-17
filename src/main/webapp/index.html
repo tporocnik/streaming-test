@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<title>WebRTC Video Conferencing Application</title>
+</head>
+<body>
+
+	<div>
+		<h2>Video Conference Sample</h2>
+	</div>
+
+	<div>
+		<button id="start-button">Start Conference</button>
+		<button id="exit-button">Exit Conference</button>
+	</div>
+
+	<!-- Remote display -->
+	<div>
+		<h3>Other Person</h3>
+		<video style="width: 50vh; height: 50vh;" id="remote-video" poster="woman.png" autoplay></video>
+	</div>
+
+	<!-- Local display -->
+	<div>
+		<h3>You</h3>
+		<video style="width: 50vh; height: 50vh;" id="local-video" poster="man.png" autoplay muted></video>
+	</div>
+
+	<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+	<script type="text/javascript" src="main.js?reloads=true"></script>
+
+</body>
+</html>
