@@ -163,9 +163,7 @@ async function handleOfferSignal(offer) {
         initPeerConnection();
     }
 
-    var desc = new RTCSessionDescription(offer.sdp);
-
-    peerConnection.setRemoteDescription(new RTCSessionDescription(desc))
+    peerConnection.setRemoteDescription(new RTCSessionDescription(offer.sdp))
         .then(initLocalStream())
         .then(function () {
             return peerConnection.createAnswer();
